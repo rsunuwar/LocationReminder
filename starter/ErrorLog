@@ -1,0 +1,7 @@
+# Don't change the app name in Manifest to Timber.
+# Solved issue with failure to connect with RemindersList. Could have
+# been the Koin file.
+# To add the maps supportFragmentManager, since we are in a Fragment already, we use childFragmentManager.
+#-- SupportMapFragment objects act as containers for the map, and provide access to the GoogleMap object.
+
+

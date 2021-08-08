@@ -14,4 +14,4 @@ Prerequisites
 * [Koin](https://github.com/InsertKoinIO/koin) - A pragmatic lightweight dependency injection framework for Kotlin.
 * [FirebaseUI Authentication](https://github.com/firebase/FirebaseUI-Android/blob/master/auth/README.md) - FirebaseUI provides a drop-in auth solution that handles the UI flows for signing
 
-* Permission denied fixed to enable uses to generate Geofence.
+* Permissions deny fixed to enable users to generate Geofence.

@@ -7,6 +7,6 @@ This app uses Firebase to manage user login authentication. Google maps api for 
 
 Prerequisites
 
-Koin, Firebase, GoogleMaps Api, Geofencing...
+* Koin, Firebase, GoogleMaps Api, Geofencing...
 
-Android SDK v30 Android Build Tools v29.0.3
+* Android SDK v30 Android Build Tools v29.0.3

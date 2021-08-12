@@ -149,7 +149,7 @@ class RemindersActivityTest :
         }
     }
     
-      @Test
+      @Test     //test passes following revised savereminderfragment.
     fun addReminder_saveAndcheckToastMessage() : Unit = runBlocking {
 
         //When activity is launched
@@ -175,9 +175,7 @@ class RemindersActivityTest :
 
         onView(withId(R.id.saveReminder)).perform(click())      //click the save fab, this saves the reminder and shows a toast msg
 
-
         onView(withText(R.string.reminder_saved)).inRoot(ToastMatcher()).check(matches(isDisplayed()))
-
 
         activityScenario.close()
 

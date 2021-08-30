@@ -149,16 +149,27 @@ class RemindersActivityTest :
         }
     }
     
-      @Test     //test passes following revised savereminderfragment.
+
+    private fun getActivity(activityScenario: ActivityScenario<RemindersActivity>): Activity? {
+        var activity: Activity? = null
+        activityScenario.onActivity {
+            activity = it
+        }
+        return activity
+    }
+
+
+
+    @Test
     fun addReminder_saveAndcheckToastMessage() : Unit = runBlocking {
 
         //When activity is launched
         val activityScenario = ActivityScenario.launch(RemindersActivity::class.java)
         dataBindingIdlingResource.monitorActivity(activityScenario)
-       // var activity = getActivity(activityScenario)
 
         //Given a new reminder
         val reminder2 = getReminder()
+        val activity = getActivity(activityScenario)
 
         //THEN click FAB button and show toast message
         onView(withId(R.id.addReminderFAB)).perform(click())        //click the fab button, go to the add location screen
@@ -175,14 +186,14 @@ class RemindersActivityTest :
 
         onView(withId(R.id.saveReminder)).perform(click())      //click the save fab, this saves the reminder and shows a toast msg
 
-        onView(withText(R.string.reminder_saved)).inRoot(ToastMatcher()).check(matches(isDisplayed()))
-
+        //now test for the toast
+        //passes on API 27,28,29
+       onView(withText(R.string.reminder_saved)).inRoot(withDecorView(not(`is`(activity?.window?.decorView)))).check(matches(isDisplayed()))
         activityScenario.close()
 
         runBlocking {
            delay(2000)
-
-
        }
     }
+
 }

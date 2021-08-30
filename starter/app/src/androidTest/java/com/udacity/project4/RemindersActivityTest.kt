@@ -34,6 +34,9 @@ import org.koin.core.context.stopKoin
 import org.koin.dsl.module
 import org.koin.test.AutoCloseKoinTest
 import org.koin.test.get
+import org.hamcrest.core.Is.`is`
+import androidx.test.espresso.matcher.RootMatchers.withDecorView
+import org.hamcrest.Matchers.not
 
 //version2
 @RunWith(AndroidJUnit4::class)

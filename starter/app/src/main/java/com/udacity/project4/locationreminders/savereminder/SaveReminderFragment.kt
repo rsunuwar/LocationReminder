@@ -31,6 +31,7 @@ import com.udacity.project4.utils.setDisplayHomeAsUpEnabled
 import org.koin.android.ext.android.inject
 import org.koin.androidx.scope.BuildConfig
 import timber.log.Timber
+import android.util.Log
 
 class SaveReminderFragment : BaseFragment() {
 

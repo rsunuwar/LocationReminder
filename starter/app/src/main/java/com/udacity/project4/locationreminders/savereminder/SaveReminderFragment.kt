@@ -155,7 +155,7 @@ class SaveReminderFragment : BaseFragment() {
                                    REQUEST_CODE_LOCATION_SETTING, null,
                                    0,0,0,
                                    null)
-                            REQUEST_TURN_DEVICE_LOCATION_ON)     // is this needed??
+                            REQUEST_TURN_DEVICE_LOCATION_ON     // is this needed??
                     } catch (sendEx: IntentSender.SendIntentException) {
                         Timber.d("Error getting location settings resolution: %s", sendEx.message)
                     }

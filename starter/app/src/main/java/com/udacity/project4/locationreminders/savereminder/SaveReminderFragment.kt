@@ -225,13 +225,13 @@ class SaveReminderFragment : BaseFragment() {
         }
 
 
-     /*      override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+           override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
                 super.onActivityResult(requestCode, resultCode, data)
                 if (requestCode == REQUEST_TURN_DEVICE_LOCATION_ON) {
                     checkDeviceLocationSettingsAndStartGeofence(false)
                 }
             }
-            */
+            
 
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

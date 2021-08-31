@@ -305,7 +305,7 @@ class SaveReminderFragment : BaseFragment() {
             private const val REQUEST_TURN_DEVICE_LOCATION_ON = 29
             private const val LOCATION_PERMISSION_INDEX = 0
             private const val BACKGROUND_LOCATION_PERMISSION_INDEX = 1
-            private const val REQUEST_CODE_LOCATION_SETTING = 1   //need to check this
+            //private const val REQUEST_CODE_LOCATION_SETTING = 1   //need to check this
             const val GEOFENCE_RADIUS_IN_METERS = 500f
         }
     }
